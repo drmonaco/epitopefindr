@@ -112,6 +112,7 @@ groupMSA <- function(groups, mpath = "intermediate_files/msa/",
 
       #convert tex to pdf
       if(pdflatex){
+        print("xxxxx")
         tools::texi2pdf(tname, clean=TRUE)
         file.copy(paste0("msa-",pad.num,".pdf"),pname)
         file.remove(paste0("msa-",pad.num,".pdf"))
